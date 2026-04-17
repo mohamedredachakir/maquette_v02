@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", "Playfair Display", serif;
+  --font-sans: "Helvetica Neue", "Inter", Arial, sans-serif;
+
+  --color-paper-cream: #FDFCF8;
+  --color-paper-100: #F7F5F0;
+  --color-paper-200: #E8E6E1;
+  --color-brand-blue: #1A4182;
+  --color-brand-red: #8B2E2E;
+  --color-accent-gold: #C5A059;
+  --color-ink: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-paper-cream text-ink font-sans selection:bg-brand-blue selection:text-white;
+  }
+}
+
+.paper-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.product-spotlight-bg {
+  background-color: #EFECE6;
+}
+
+.notebook-shadow {
+  box-shadow: 20px 20px 60px rgba(0,0,0,0.15);
+}
